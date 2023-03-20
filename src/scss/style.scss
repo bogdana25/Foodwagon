@@ -1,9 +1,36 @@
 @import "fonts";
 
-body{
-  font-family: CormorantUpright;
-  font-size: 50px;
-  span{
-    color: blue;
+// body {
+//   font-family: CormorantUpright;
+//   font-size: 50px;
+
+//   span {
+//     color: blue;
+//   }
+// }
+
+.header-img {
+  img {
+    max-width: 604px;
+    // width: 100%;
   }
+}
+
+.header-order-tab-txt {
+  padding: 20px;
+  border: 1px solid #000;
+  display: none;
+}
+
+.header-order-tab-txt.active {
+  display: block;
+}
+
+.header-order-tab-nav {
+  display: inline-block;
+  padding: 20px;
+}
+
+.header-order-tab-nav.active {
+  color: #ff4200;
 }
