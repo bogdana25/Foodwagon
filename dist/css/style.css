@@ -41,3 +41,23 @@
 .header-order-tab-nav.active {
   color: #ff4200;
 }
+
+.image-slider__image img {
+  max-height: 282px;
+  max-width: 284px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.swiper-prev,
+.swiper-next {
+  color: #000;
+}
+
+.menu-nav__img img {
+  border-radius: 50%;
+}
+
+.install-img img {
+  max-width: 600px;
+}
