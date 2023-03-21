@@ -19,39 +19,41 @@
         <div class="navbar">
    <div class="container">
       <div class="navbar__container">
-         <div class="navbar-logo">
-            <div class="navbar-logo__icon">
-               <img src="img/icon/logo.svg" alt="">
-            </div>
-            <div class="navbar-logo__text">food<span>waGon</span></div>
-         </div>
-         <div class="navbar-map">
-            <div class="navbar-map-text">
-               Deliver to:
-            </div>
-            <div class="navbar-map__icon">
-               <img src="img/icon/map-marker.svg" alt="">
-            </div>
-            <div class="navbar-map-txt">
-               Current Location
-               <span>Mohammadpur Bus Stand, Dhaka</span>
-            </div>
-         </div>
-         <div class="navbar-user-menu">
-            <div class="navbar-search">
-               <div class="navbar-search-icon">
-                  <img src="img/icon/Search.svg" alt="">
+         <div class="navbar__flex-container">
+            <div class="navbar-logo flexbox">
+               <div class="navbar-logo__icon">
+                  <img src="img/icon/logo.svg" alt="">
                </div>
-               <input type="text" placeholder="Search Food">
+               <div class="navbar-logo__text">food<span>waGon</span></div>
             </div>
-            <a class="navbar-user-btn">
-               <div class="navbar-user">
-                  <div class="navbar-user-icon">
-                     <img src="img/icon/user.svg" alt="">
+            <div class="navbar-map flexbox">
+               <div class="navbar-map-text">
+                  Deliver to:
+               </div>
+               <div class="navbar-map__icon">
+                  <img src="img/icon/map-marker.svg" alt="">
+               </div>
+               <div class="navbar-map-txt">
+                  Current Location
+                  <span>Mohammadpur Bus Stand, Dhaka</span>
+               </div>
+            </div>
+            <div class="navbar-user-menu flexbox">
+               <div class="navbar-search flexbox">
+                  <div class="navbar-search-icon">
+                     <img src="img/icon/Search.svg" alt="">
                   </div>
-                  <div class="navbar-user-text">Login</div>
+                  <input class="navbar-search__input" type="text" placeholder="Search Food">
                </div>
-            </a>
+               <a href="#" class="navbar-user-btn">
+                  <div class="navbar-user flexbox">
+                     <div class="navbar-user__icon">
+                        <img src="img/icon/user.svg" alt="">
+                     </div>
+                     <div class="navbar-user__text">Login</div>
+                  </div>
+               </a>
+            </div>
          </div>
       </div>
    </div>
@@ -64,15 +66,15 @@
                <div class="col-7">
                   <div class="row">
                      <div class="col-12">
-                        <div class="header-title">Are you starving?</div>
+                        <div class="header__title">Are you starving?</div>
                      </div>
                      <div class="col-12">
-                        <div class="header-text">Within a few clicks, find meals that are accessible near you</div>
+                        <div class="header__text">Within a few clicks, find meals that are accessible near you</div>
                      </div>
                      <div class="col-12">
                         <div class="header-order">
-                           <div class="header-order-tab">
-                              <div class="header-order-tab-contain">
+                           <div class="header-order__tab">
+                              <div class="header-order__tab-contain">
 
                                  <a href="#delivery" data-tab="delivery" class="header-order-tab-nav active">
                                     <div class="header-order-tab-icon"> <img src="img/icon/delivery.svg" alt=""></div>
