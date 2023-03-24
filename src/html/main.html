@@ -522,7 +522,7 @@
 <section class="menu-nav">
    <div class="container">
       <div class="menu-nav__title">Search by Food</div>
-      <div class="menu-nav__container">
+      <div class="menu-nav__container col-11">
          <div class="image-slider-menu swiper swiper-container">
             <!-- Additional required wrapper -->
             <div class="image-slider__wrapper swiper-wrapper">
@@ -640,22 +640,26 @@
                         <div class="install__text">It's never been easier to order food. Look for the finest discounts
                            and you'll be lost in a world of delectable food.</div>
                         <div class="install__buttons">
-                           <div class="install__buttons-btn">
-                              <a href="#">
+                           <div class="install__button">
+                              <a class="install__buttons-btn" href="#">
                                  <div class="install__buttons-btn-img"> <img src="img/icon/Google-Play-logo.svg" alt="">
                                  </div>
                                  <div class="install__buttons-btn-text">
-                                    <div class="install__buttons-btn-subtitle">GET IN ON</div>
-                                    <div class="install__buttons-btn-title">Google Play</div>
+                                    <div class="install__buttons-btn-subtitle"><img src="img/icon/google-sub.svg"
+                                          alt=""></div>
+                                    <div class="install__buttons-btn-title"><img src="img/icon/Google Play.svg" alt="">
+                                    </div>
                                  </div>
                               </a>
                            </div>
-                           <div class="install__buttons-btn">
-                              <a href="#">
-                                 <div class="install__buttons-btn-img"></div>
+                           <div class="install__button">
+                              <a class="install__buttons-btn" href="#">
+                                 <div class="install__buttons-btn-img"> <img src="img/icon/Apple-logo.svg" alt=""></div>
                                  <div class="install__buttons-btn-text">
-                                    <div class="install__buttons-btn-subtitle"> Download on the</div>
-                                    <div class="install__buttons-btn-title">App Store</div>
+                                    <div class="install__buttons-btn-subtitle"><img src="img/icon/apple-sub.svg" alt="">
+                                    </div>
+                                    <div class="install__buttons-btn-title"><img src="img/icon/App Store.svg" alt="">
+                                    </div>
                                  </div>
                               </a>
                            </div>
@@ -672,69 +676,83 @@
 <section class="recommendations">
    <div class="container">
       <div class="recommendations__container">
-         <div class="row">
-            <div class="col-12">
-               <div class="recommendations-card">
-                  <div class="row">
-                     <div class="col-4">
-                        <div class="recommendations-card__title">Best deals <span>Crispy Sandwiches</span></div>
-                        <div class="recommendations-card__text">Enjoy the large size of sandwiches. Complete perfect
-                           slice of sandwiches.</div>
-                        <div class="recommendations-card__button">
-                           <a class="recommendations-card__btn" href="#">Proceed to order <img src="" alt=""></a>
-                        </div>
-                     </div>
-                     <div class="col-8">
-                        <div class="recommendations-card__img">
-                           <img src="img/menu1.png" alt="">
-                        </div>
-                     </div>
 
 
-                     <div class="col-8">
-                        <div class="recommendations-card__img">
-                           <img src="img/menu2.png" alt="">
-                        </div>
-                     </div>
-                     <div class="col-4">
-                        <div class="recommendations-card__title">Best deals <span>Crispy Sandwiches</span></div>
-                        <div class="recommendations-card__text">Enjoy the large size of sandwiches. Complete perfect
-                           slice of sandwiches.</div>
-                        <div class="recommendations-card__button">
-                           <a class="recommendations-card__btn" href="#">Proceed to order <img src="" alt=""></a>
-                        </div>
-                     </div>
-
-
-                     <div class="col-4">
-                        <div class="recommendations-card__title">Best deals <span>Crispy Sandwiches</span></div>
-                        <div class="recommendations-card__text">Enjoy the large size of sandwiches. Complete perfect
-                           slice of sandwiches.</div>
-                        <div class="recommendations-card__button">
-                           <a class="recommendations-card__btn" href="#">Proceed to order <img src="" alt=""></a>
-                        </div>
-                     </div>
-                     <div class="col-8">
-                        <div class="recommendations-card__img">
-                           <img src="img/menu3.png" alt="">
-                        </div>
-                     </div>
+         <!-- <div class="row"> -->
+         <div class="recommendations-card">
+            <div class="row align-items-center">
+               <div class="col-4 recommendations-card__txt-contain">
+                  <div class="recommendations-card__title">Best deals <span>Crispy Sandwiches</span></div>
+                  <div class="recommendations-card__text">Enjoy the large size of sandwiches. Complete perfect
+                     slice of sandwiches.</div>
+                  <div class="recommendations-card__button">
+                     <a class="recommendations-card__btn" href="#">Proceed to order <img src="img/icon/nav-right.svg"
+                           alt=""></a>
+                  </div>
+               </div>
+               <div class="col-8">
+                  <div class="recommendations-card__img">
+                     <img src="img/menu1.png" alt="">
                   </div>
                </div>
             </div>
          </div>
+
+         <div class="recommendations-card">
+            <div class="row align-items-center">
+               <div class="col-8">
+                  <div class="recommendations-card__img recommendations-card__img-reverse">
+                     <img src="img/menu2.png" alt="">
+                  </div>
+               </div>
+               <div class="col-4 recommendations-card__txt-contain">
+                  <div class="recommendations-card__title">Celebrate parties
+                     with <span>Fried Chicken</span></div>
+                  <div class="recommendations-card__text">Get the best fried chicken smeared with a lip smacking lemon
+                     chili flavor. Check out
+                     best deals for fried chicken.</div>
+                  <div class="recommendations-card__button">
+                     <a class="recommendations-card__btn" href="#">Proceed to order <img src="img/icon/nav-right.svg"
+                           alt=""></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="recommendations-card">
+            <div class="row align-items-center">
+               <div class="col-4 recommendations-card__txt-contain">
+                  <div class="recommendations-card__title">Wanna eat hot
+                     & spicy <span> Pizza?</span></div>
+                  <div class="recommendations-card__text">Pair up with a friend and enjoy the
+                     hot and crispy pizza pops. Try it
+                     with the best deals.</div>
+                  <div class="recommendations-card__button">
+                     <a class="recommendations-card__btn" href="#">Proceed to order <img src="img/icon/nav-right.svg"
+                           alt=""></a>
+                  </div>
+               </div>
+               <div class="col-8">
+                  <div class="recommendations-card__img">
+                     <img src="img/menu3.png" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- </div> -->
       </div>
    </div>
 </section>
 <section class="order">
    <div class="container">
       <div class="order__container">
-         <div class="col-6">
+         <div class="col-6 order-col">
             <div class="order__title">Are you ready to order with the best deals?</div>
          </div>
-         <div class="col-2">
+         <div class="col-3 order-col">
             <div class="order__button">
-               <a class="order__btn" href="#">Proceed to order <img src="" alt=""></a>
+               <a class="order__btn" href="#">Proceed to order <img src="img/icon/nav-right.svg" alt=""></a>
             </div>
          </div>
       </div>
