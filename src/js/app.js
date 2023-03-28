@@ -51,21 +51,24 @@ new Swiper('.image-slider', {
    },
    // стрелки
    navigation: {
-      nextEl: ".swiper-next",
-      prevEl: ".swiper-prev",
+      nextEl: ".popular-slide-btn-next",
+      prevEl: ".popular-slide-btn-prev",
    },
    breakpoints: {
       0: {
+         slidesPerView: 1,
+         spaceBetween: 20,
+      },
+      340: {
          slidesPerView: 2,
          spaceBetween: 20,
       },
-
-      668: {
-         slidesPerView: 4,
+      768: {
+         slidesPerView: 3,
          spaceBetween: 40,
       },
       1024: {
-         slidesPerView: 5,
+         slidesPerView: 4,
          spaceBetween: 16,
       },
    },
@@ -83,21 +86,24 @@ new Swiper('.image-slider-menu', {
    },
    // стрелки
    navigation: {
-      nextEl: ".swiper-next",
-      prevEl: ".swiper-prev",
+      nextEl: ".menu-nav-btn-next",
+      prevEl: ".menu-nav-btn-prev",
    },
    breakpoints: {
       0: {
+         slidesPerView: 2,
+         spaceBetween: 20,
+      },
+      479: {
          slidesPerView: 3,
          spaceBetween: 20,
       },
-
-      668: {
+      768: {
          slidesPerView: 4,
          spaceBetween: 40,
       },
       1024: {
-         slidesPerView: 6,
+         slidesPerView: 5,
          spaceBetween: 16,
       },
    },
