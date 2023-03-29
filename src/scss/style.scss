@@ -1,20 +1,99 @@
 @import "fonts";
 @import "null";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Source+Sans+Pro:wght@400;700;900&display=swap');
-
+$primary: #FFB30E;
+$sprimary: #FF8A00;
+$orange: #F17228;
+$white: #ffff;
+$whiteg: #F5F5F5;
+$dark: #212121;
+$grey: #424242;
+$grey1: #434343;
+$grey2: #504F4F;
+$grey3: #757575;
+$grey4: #9E9E9E;
+$grey5: #353535;
+$black: #000;
+$bg1: #FCCB1C;
+$bg2: rgba(241, 114, 40, 0.2);
+$bg3: #FEEFD0;
+$font1: 'Source Sans Pro', sans-serif;
+$font2: 'Open Sans', sans-serif;
 
 // font-family: 'Open Sans',
 // sans-serif;
 // font-family: 'Source Sans Pro',
 // sans-serif;
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: $font1;
 }
+
 
 .container {
   @media (min-width: 1480px) {
     max-width: 1480px;
   }
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 88px;
+  line-height: 100%;
+  color: $white;
+  margin-bottom: 15px;
+
+  @media (max-width: 1199px) {
+    font-size: 68px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 58px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 479px) {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 106%;
+
+  @media (max-width: 767px) {
+    font-size: 58px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 48px;
+    line-height: 86%;
+  }
+
+  @media (max-width: 479px) {
+    font-size: 38px;
+  }
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 112%;
+
+  @media (max-width: 991px) {
+    font-size: 38px;
+  }
+
+  @media (max-width: 479px) {
+    font-size: 30px;
+  }
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 120%;
 }
 
 // -----------------------
@@ -47,7 +126,7 @@ body {
     font-size: 31.1102px;
     line-height: 120%;
     letter-spacing: -0.025em;
-    color: #F17228;
+    color: $orange;
     margin-right: 30px;
 
 
@@ -56,7 +135,7 @@ body {
       font-size: 31.1102px;
       line-height: 120%;
       letter-spacing: -0.02em;
-      color: #FFB30E;
+      color: $primary;
     }
   }
 
@@ -75,7 +154,7 @@ body {
     font-size: 18px;
     line-height: 100%;
     text-align: center;
-    color: #424242;
+    color: $grey;
     margin-right: 12px;
   }
 
@@ -84,22 +163,22 @@ body {
   }
 
   &-map-txt {
-    font-family: 'Open Sans';
+    font-family: $font2;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;
     text-align: center;
-    color: #424242;
+    color: $grey;
 
     span {
-      font-family: 'Open Sans';
+      font-family: $font2;
       font-style: normal;
       font-weight: 700;
       font-size: 18px;
       line-height: 140%;
       text-align: center;
-      color: #424242;
+      color: $grey;
     }
   }
 
@@ -113,7 +192,7 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 100%;
-    color: #424242;
+    color: $grey;
     max-width: 140px;
 
     &::placeholder {
@@ -121,7 +200,7 @@ body {
       font-size: 18px;
       line-height: 100%;
       text-align: center;
-      color: #424242;
+      color: $grey;
 
     }
   }
@@ -136,7 +215,8 @@ body {
     line-height: 100%;
     /* identical to box height, or 18px */
     text-align: center;
-    color: #FF8A00;
+    color: $sprimary;
+
   }
 }
 
@@ -169,7 +249,7 @@ body {
 }
 
 .header-order-tab-nav.active {
-  color: #ff4200;
+  color: $orange;
 }
 
 .image-slider__image img {
@@ -182,7 +262,7 @@ body {
 
 .swiper-prev,
 .swiper-next {
-  color: #000;
+  color: $black;
 }
 
 .menu-nav__img {
@@ -213,7 +293,7 @@ body {
   position: relative;
 
   @media (max-width: 991px) {
-    background: #FCCB1C;
+    background: $bg1;
     height: 400px;
   }
 
@@ -242,33 +322,12 @@ body {
     }
   }
 
-  &__title {
-    font-weight: 700;
-    font-size: 88px;
-    line-height: 100%;
-    color: #FFFFFF;
-    margin-bottom: 15px;
-
-    @media (max-width: 1199px) {
-      font-size: 68px;
-    }
-
-    @media (max-width: 991px) {
-      font-size: 58px;
-      margin-bottom: 30px;
-    }
-
-    @media (max-width: 479px) {
-      font-size: 38px;
-      margin-bottom: 20px;
-    }
-  }
 
   &__text {
     font-weight: 400;
     font-size: 22px;
     line-height: 120%;
-    color: #504F4F;
+    color: $grey2;
     margin-bottom: 30px;
 
     @media (max-width: 1199px) {
@@ -286,7 +345,7 @@ body {
   }
 
   &-order {
-    background-color: #FFFFFF;
+    background-color: $white;
     border-radius: 16px;
     padding: 24px;
     max-width: 856px;
@@ -315,7 +374,7 @@ body {
       font-weight: 700;
       font-size: 18px;
       line-height: 100%;
-      color: #F17228;
+      color: $orange;
     }
   }
 
@@ -324,7 +383,7 @@ body {
     font-size: 18px;
     line-height: 100%;
     text-align: center;
-    color: #FFFFFF;
+    color: $white;
 
     @media (max-width: 479px) {
       font-size: 16px;
@@ -333,7 +392,7 @@ body {
 
   &-order-tab-button {
     display: block;
-    background-color: #F17228;
+    background-color: $orange;
     padding: 21px 48px;
     border-radius: 8px;
     max-width: 200px;
@@ -360,7 +419,7 @@ body {
   }
 
   &-order-tab-input {
-    background: #F5F5F5;
+    background: $whiteg;
     border-radius: 8px;
     max-width: 570px;
     width: 100%;
@@ -379,7 +438,7 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 100%;
-    color: #757575;
+    color: $grey3;
   }
 }
 
@@ -414,7 +473,7 @@ body {
       font-weight: 700;
       font-size: 22px;
       line-height: 120%;
-      color: #424242;
+      color: $grey;
       margin-bottom: 14px;
       margin-top: 30px;
 
@@ -424,13 +483,13 @@ body {
     }
 
     &__subtitle {
-      background: rgba(241, 114, 40, 0.2);
+      background: $bg2;
       border-radius: 8px;
       font-style: normal;
       font-weight: 700;
       font-size: 22px;
       line-height: 120%;
-      color: #F17228;
+      color: $orange;
       display: inline-block;
       padding: 8px 16px;
 
@@ -445,8 +504,8 @@ body {
       line-height: 106%;
       display: flex;
       align-items: center;
-      color: #FFFFFF;
-      background: #FFB30E;
+      color: $white;
+      background: $primary;
       border-radius: 0px 32px 0px 15px;
       max-width: 140px;
       padding: 12px 18px;
@@ -472,13 +531,13 @@ body {
       font-weight: 700;
       font-size: 35px;
       line-height: 120%;
-      color: #FFFFFF;
+      color: $white;
 
       span {
         font-weight: 400;
         font-size: 22px;
         line-height: 120%;
-        color: #FFFFFF;
+        color: $white;
       }
 
       @media (max-width: 479px) {
@@ -510,11 +569,8 @@ body {
   }
 
   &__title {
-    font-weight: 700;
-    font-size: 43px;
-    line-height: 112%;
     text-align: center;
-    color: #F17228;
+    color: $orange;
     margin-bottom: 70px;
   }
 
@@ -526,17 +582,17 @@ body {
       font-size: 22px;
       line-height: 120%;
       text-align: center;
-      color: #434343;
+      color: $grey1;
     }
 
     &__text {
-      font-family: 'Open Sans';
+      font-family: $font2;
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
       line-height: 140%;
       text-align: center;
-      color: #9E9E9E;
+      color: $grey4;
     }
 
     &__img {
@@ -556,11 +612,8 @@ body {
   }
 
   &__title {
-    font-weight: 700;
-    font-size: 43px;
-    line-height: 112%;
     text-align: center;
-    color: #212121;
+    color: $dark;
     margin-bottom: 88px;
 
     @media (max-width: 767px) {
@@ -584,8 +637,8 @@ body {
   left: -100px;
   top: 30%;
   padding: 35px;
-  color: white;
-  background-color: #FAAA01;
+  color: $white;
+  background-color: $primary ;
   border-radius: 50%;
 
   @media (max-width: 1350px) {
@@ -598,8 +651,8 @@ body {
   left: auto;
   top: 30%;
   padding: 35px;
-  color: white;
-  background-color: #FAAA01;
+  color: $white;
+  background-color: $primary;
   border-radius: 50%;
 
   @media (max-width: 1350px) {
@@ -611,7 +664,7 @@ body {
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
-  color: #424242;
+  color: $grey;
   margin-bottom: 8px;
 }
 
@@ -622,7 +675,7 @@ body {
     font-weight: 400;
     font-size: 22px;
     line-height: 120%;
-    color: #FFB30E;
+    color: $primary;
   }
 
   img {
@@ -642,7 +695,7 @@ body {
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
-  color: #212121;
+  color: $dark;
   margin-bottom: 16px;
 }
 
@@ -652,7 +705,7 @@ body {
   justify-content: center;
   padding: 21px 48px;
 
-  background: #F17228;
+  background: $orange;
   box-shadow: 0px 5px 10px rgba(253, 114, 92, 0.22), 0px 20px 40px rgba(250, 99, 35, 0.24);
   border-radius: 8px;
   font-weight: 700;
@@ -660,7 +713,7 @@ body {
   line-height: 100%;
 
   text-align: center;
-  color: #FFFFFF;
+  color: $white;
 }
 
 // ----------------------
@@ -674,11 +727,8 @@ body {
   }
 
   &__title {
-    font-weight: 700;
-    font-size: 43px;
-    line-height: 112%;
     text-align: center;
-    color: #212121;
+    color: $dark;
     margin-bottom: 88px;
 
     @media (max-width: 479px) {
@@ -724,14 +774,14 @@ body {
       font-weight: 700;
       font-size: 22px;
       line-height: 120%;
-      color: #424242;
+      color: $grey;
     }
 
     &-logo-rating__txt {
       font-weight: 400;
       font-size: 22px;
       line-height: 120%;
-      color: #FFB30E;
+      color: $primary;
     }
 
     &-logo-rating__icon {
@@ -772,13 +822,13 @@ body {
       }
 
       &-time {
-        background: #FFB30E;
+        background: $primary;
         border-radius: 8px;
         padding: 8px 16px;
       }
 
       &-discount {
-        background: #F17228;
+        background: $orange;
         border-radius: 8px;
         padding: 8px 16px;
         margin-right: 8px;
@@ -807,7 +857,7 @@ body {
       font-size: 18px;
       line-height: 100%;
       text-align: center;
-      color: #FFFFFF;
+      color: $white;
     }
   }
 
@@ -816,13 +866,13 @@ body {
 .tomorrow {
   display: inline-block;
   padding: 8px 16px;
-  background: rgba(241, 114, 40, 0.2);
+  background: $bg2;
   border-radius: 16px;
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
-  color: #F17228;
-  ;
+  color: $orange;
+
 }
 
 // -----------------------
@@ -842,16 +892,12 @@ body {
 
   &-flex-container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
   }
 
   &__title {
-    font-weight: 700;
-    font-size: 43px;
-    line-height: 112%;
     text-align: left;
-    color: #212121;
+    color: $dark;
     margin-bottom: 80px;
 
     @media (max-width: 479px) {
@@ -867,44 +913,67 @@ body {
     top: 20%;
     right: 15%;
 
-    @media (max-width: 1199px) {
+    @media (max-width: 992px) {
       display: none;
     }
 
-    &-text {
-      @media (max-width: 1199px) {
-        display: none;
-      }
-    }
+    // &-text {
+    //   font-weight: 700;
+    //   font-size: 18px;
+    //   line-height: 100%;
+    //   text-align: center;
+    //   color: #FFB30E;
+
+    //   img {
+    //     margin-top: 3px;
+    //   }
+
+    //   @media (max-width: 1480px) {
+    //     right: 420px;
+    //   }
+
+    //   @media (max-width: 1350px) {
+    //     display: none;
+    //   }
+    // }
   }
 
   &-btn-next {
-    color: white;
-    background-color: #FAAA01;
+    color: $white;
+    background-color: $primary;
     padding: 35px;
     border-radius: 50%;
     right: -80px;
     left: auto;
+
+    @media (max-width: 1480px) {
+      right: 10px;
+    }
   }
 
   &-btn-prev {
-    color: white;
-    background-color: #FAAA01;
+    color: $white;
+    background-color: $primary;
     padding: 35px;
     border-radius: 50%;
     right: auto;
     left: -80px;
+
+    @media (max-width: 1480px) {
+      left: -160px;
+    }
   }
 }
 
-.image-slider__title {
-  margin-top: 26px;
-  text-align: center;
+.menu-nav-slider__title {
   font-weight: 700;
   font-size: 22px;
+  text-align: center;
   line-height: 120%;
-  color: #424242;
+  color: $grey;
+  margin-top: 26px;
 }
+
 
 // ---------------
 // more
@@ -912,7 +981,7 @@ body {
   padding-top: 130px;
   background: url(/img/install-bg.png) no-repeat;
   background-position: bottom center;
-  background-color: #FEEFD0;
+  background-color: $bg3;
 
   @media (max-width: 479px) {
     padding-top: 50px;
@@ -922,7 +991,7 @@ body {
 
 .some-info {
   padding: 55px 0;
-  background: #FFFFFF;
+  background: $white;
   box-shadow: 0px 14px 15px rgba(255, 174, 0, 0.01), 0px 27px 82px rgba(255, 174, 0, 0.28);
   border-radius: 46px;
   margin: 0 auto;
@@ -979,9 +1048,6 @@ body {
     }
 
     &__title {
-      font-weight: 700;
-      font-size: 35px;
-      line-height: 120%;
       max-width: 151px;
       background: linear-gradient(92.84deg, #FB3C00 -47.72%, #FFB800 136.81%);
       -webkit-background-clip: text;
@@ -1016,32 +1082,16 @@ body {
   }
 
   &__title {
-    font-weight: 700;
-    font-size: 68px;
-    line-height: 106%;
     margin-top: 30px;
     background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 10px;
-
-    @media (max-width: 767px) {
-      font-size: 58px;
-    }
-
-    @media (max-width: 550px) {
-      font-size: 48px;
-      line-height: 86%;
-    }
-
-    @media (max-width: 479px) {
-      font-size: 38px;
-    }
   }
 
   &__text {
-    font-family: 'Open Sans';
+    font-family: $font2;
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;
@@ -1055,7 +1105,7 @@ body {
 
 
   &__button {
-    background: #FFFFFF;
+    background: $white;
     mix-blend-mode: normal;
     padding: 10px 7px;
     /* Shadow/1 */
@@ -1104,7 +1154,7 @@ body {
     margin-bottom: 80px;
     filter: drop-shadow(0px 14px 15px rgba(124, 124, 124, 0.06)) drop-shadow(0px 27px 82px rgba(124, 124, 124, 0.28));
     border-radius: 16px;
-    background: #FFFFFF;
+    background: $white;
 
     @media (max-width: 479px) {
       margin-bottom: 50px;
@@ -1144,7 +1194,7 @@ body {
     }
 
     &__text {
-      font-family: 'Open Sans';
+      font-family: $font2;
       font-style: normal;
       font-weight: 600;
       font-size: 18px;
@@ -1171,18 +1221,14 @@ body {
     }
 
     &__title {
-      font-weight: 700;
-      font-size: 43px;
-      line-height: 112%;
-      /* or 48px */
-      color: #353535;
+      color: $grey5;
       margin-bottom: 20px;
 
       span {
         font-weight: 700;
         font-size: 43px;
         line-height: 112%;
-        color: #FFB30E;
+        color: $primary;
 
         @media (max-width: 479px) {
           font-size: 33px;
@@ -1205,7 +1251,7 @@ body {
       /* identical to box height, or 18px */
       text-align: center;
       text-transform: uppercase;
-      color: #FFFFFF;
+      color: $white;
       display: inline-block;
       padding: 21px 0;
       background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
@@ -1236,7 +1282,7 @@ body {
   margin: 0 auto;
 
   @media (max-width: 1199px) {
-    background: #FFB30E;
+    background: $primary;
   }
 
   &-col {
@@ -1248,7 +1294,7 @@ body {
     font-size: 57px;
     line-height: 97.5%;
     text-align: center;
-    color: #FFFFFF;
+    color: $white;
     margin-bottom: 62px;
 
     @media (max-width: 991px) {
@@ -1272,7 +1318,7 @@ body {
     line-height: 100%;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $white;
     padding: 21px 25px;
     background: linear-gradient(93.41deg, #F17228 -5.63%, #F15E28 100.8%);
     box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
@@ -1289,7 +1335,7 @@ body {
 // -----------------
 // footer
 .footer {
-  background: #212121;
+  background: $dark;
   padding: 100px 0 70px 0;
 
   @media (max-width: 479px) {
@@ -1302,7 +1348,7 @@ body {
       font-size: 22px;
       line-height: 120%;
       /* or 26px */
-      color: #FFFFFF;
+      color: $white;
       margin-bottom: 40px;
     }
 
@@ -1311,7 +1357,7 @@ body {
       align-items: center;
       justify-content: space-between;
       padding-bottom: 100px;
-      border-bottom: 2px solid #424242;
+      border-bottom: 2px solid $grey;
 
       @media (max-width: 991px) {
         justify-content: center;
@@ -1334,14 +1380,14 @@ body {
       font-weight: 400;
       font-size: 18px;
       line-height: 100%;
-      color: #F5F5F5;
+      color: $whiteg;
       margin-bottom: 16px;
     }
   }
 
   &-info {
     padding: 63px 0;
-    border-bottom: 2px solid #424242;
+    border-bottom: 2px solid $grey;
 
     &__container {
       display: flex;
@@ -1383,7 +1429,7 @@ body {
       font-size: 22px;
       line-height: 120%;
       /* or 26px */
-      color: #FFFFFF;
+      color: $white;
     }
 
     &__text {
@@ -1391,7 +1437,7 @@ body {
       font-weight: 400;
       font-size: 18px;
       line-height: 100%;
-      color: #F5F5F5;
+      color: $whiteg;
     }
   }
 
@@ -1410,7 +1456,7 @@ body {
       line-height: 120%;
       /* identical to box height, or 22px */
       text-transform: uppercase;
-      color: #F5F5F5;
+      color: $whiteg;
       opacity: 0.6;
       margin-bottom: 40px;
     }
@@ -1426,7 +1472,7 @@ body {
     }
 
     &__subtitle {
-      font-family: 'Open Sans';
+      font-family: $font2;
       font-style: normal;
       font-weight: 700;
       font-size: 18px;
@@ -1449,9 +1495,9 @@ body {
         max-width: 334px;
         width: 100%;
         padding: 17px 16px 18px 16px;
-        background: #424242;
+        background: $grey;
         border-radius: 8px;
-        font-family: 'Open Sans';
+        font-family: $font2;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -1472,7 +1518,7 @@ body {
         line-height: 100%;
         /* identical to box height, or 18px */
         text-align: center;
-        color: #FFFFFF;
+        color: $white;
         background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
         /* Button shadow ! */
         box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
@@ -1493,12 +1539,12 @@ body {
     }
 
     &-txt {
-      font-family: 'Open Sans';
+      font-family: $font2;
       font-style: normal;
       font-weight: 400;
       font-size: 15px;
       line-height: 120%;
-      color: #F5F5F5;
+      color: $whiteg;
 
       @media (max-width: 767px) {
         margin-bottom: 20px;
@@ -1506,12 +1552,12 @@ body {
       }
 
       span {
-        font-family: 'Open Sans';
+        font-family: $font2;
         font-style: normal;
         font-weight: 700;
         font-size: 15px;
         line-height: 120%;
-        color: #F5F5F5;
+        color: $whiteg;
       }
 
       img {
