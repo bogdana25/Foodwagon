@@ -1054,6 +1054,62 @@ h5 {
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
+
+    &-one {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 30px;
+        right: -36px;
+        width: 2px;
+        height: 96px;
+        background-color: #CFCFCF;
+
+        @media (max-width: 1479px) {
+          top: 80px;
+          right: 0;
+        }
+
+        @media (max-width: 1199px) {
+          top: 80px;
+          right: 32px;
+        }
+
+        @media (max-width: 993px) {
+          display: none;
+        }
+      }
+    }
+
+    &-two {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 30px;
+        right: -30px;
+        width: 2px;
+        height: 96px;
+        background-color: #CFCFCF;
+
+        @media (max-width: 1479px) {
+          top: 80px;
+          right: 0;
+        }
+
+        @media (max-width: 1199px) {
+          top: 80px;
+          right: 32px;
+        }
+
+        @media (max-width: 993px) {
+          display: none;
+        }
+      }
+    }
   }
 }
 

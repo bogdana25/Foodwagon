@@ -1030,6 +1030,64 @@ h5 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+.some-info-card-one {
+  position: relative;
+}
+.some-info-card-one::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: -36px;
+  width: 2px;
+  height: 96px;
+  background-color: #CFCFCF;
+}
+@media (max-width: 1479px) {
+  .some-info-card-one::after {
+    top: 80px;
+    right: 0;
+  }
+}
+@media (max-width: 1199px) {
+  .some-info-card-one::after {
+    top: 80px;
+    right: 32px;
+  }
+}
+@media (max-width: 993px) {
+  .some-info-card-one::after {
+    display: none;
+  }
+}
+.some-info-card-two {
+  position: relative;
+}
+.some-info-card-two::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: -30px;
+  width: 2px;
+  height: 96px;
+  background-color: #CFCFCF;
+}
+@media (max-width: 1479px) {
+  .some-info-card-two::after {
+    top: 80px;
+    right: 0;
+  }
+}
+@media (max-width: 1199px) {
+  .some-info-card-two::after {
+    top: 80px;
+    right: 32px;
+  }
+}
+@media (max-width: 993px) {
+  .some-info-card-two::after {
+    display: none;
+  }
+}
 
 @media (max-width: 479px) {
   .install__img {
