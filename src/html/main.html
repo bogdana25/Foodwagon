@@ -27,7 +27,7 @@
                   </div>
                   <input class="navbar-search__input" type="text" placeholder="Search Food">
                </div>
-               <a href="#" class="navbar-user-btn">
+               <a href="#" class="navbar-user__btn">
                   <div class="navbar-user flexbox">
                      <div class="navbar-user__icon">
                         <img src="img/icon/user.svg" alt="user-icon">
@@ -56,9 +56,9 @@
                   <div class="col-12">
                      <div class="header-order">
                         <div class="header-order__tab">
-                           <div class="header-order__tab-flex-container">
+                           <div class="header-order__tab-flex-container header-order__tab-container">
                               <div class="header-order__tab-contain">
-                                 <div href="#delivery" data-tab="delivery" class="header-order-tab-nav active">
+                                 <div data-tab="delivery" class="header-order-tab-nav active">
                                     <div class="header-order-tab-icon"> <img src="img/icon/delivery.svg" alt="">
                                     </div>
                                     <span> Delivery</span>
@@ -66,7 +66,7 @@
                               </div>
 
                               <div class="header-order-tab-contain">
-                                 <div href="#pickup" data-tab="pickup" class="header-order-tab-nav pickup-txt">
+                                 <div data-tab="pickup" class="header-order-tab-nav pickup-txt">
                                     <div class="header-order-tab-icon "> <img src="img/icon/pickup.svg" alt=""></div>
                                     <span>Pickup</span>
                                  </div>
@@ -192,11 +192,11 @@
    </div>
 </section>
 <section class="popular">
-   <div class="container">
+   <div class=" container">
+      <div class="swiper-button-next popular-slide-btn-next"></div>
       <div class="popular__container">
          <h4 class="popular__title">Popular items</h4>
          <div class="popular-swiper">
-            <div class="swiper-button-next popular-slide-btn-next"></div>
             <div class="image-slider swiper swiper-container">
                <!-- Additional required wrapper -->
                <div class="image-slider__wrapper swiper-wrapper">
@@ -221,7 +221,8 @@
                      </div>
                      <h6 class="image-slider__title">Toffe’s Cake</h6>
                      <div class="image-slider__location"><a href="#"> <img src="img/icon/map-marker.svg"
-                              alt=""><span>Top Sticks</span></a>
+                              alt=""><span>Top
+                              Sticks</span></a>
                      </div>
                      <div class="image-slider__text">$4.00</div>
                      <div class="image-slider__btn">
@@ -235,9 +236,24 @@
                      </div>
                      <h6 class="image-slider__title">Dancake</h6>
                      <div class="image-slider__location"><a href="#"> <img src="img/icon/map-marker.svg"
-                              alt=""><span>Cake World</span></a>
+                              alt=""><span>Cake
+                              World</span></a>
                      </div>
                      <div class="image-slider__text">$1.99</div>
+                     <div class="image-slider__btn">
+                        <a class="image-slider__button" href="#">Order Now</a>
+                     </div>
+                  </div>
+
+                  <div class="image-slider__slide swiper-slide">
+                     <div class="image-slider__image popular-slider__img">
+                        <a href="#"> <img src="img/popular-1.png" alt="image"></a>
+                     </div>
+                     <h6 class="image-slider__title">Cheese Burger</h6>
+                     <div class="image-slider__location"><a href="#"> <img src="img/icon/map-marker.svg"
+                              alt=""><span>Burger Arena</span></a>
+                     </div>
+                     <div class="image-slider__text">$3.88</div>
                      <div class="image-slider__btn">
                         <a class="image-slider__button" href="#">Order Now</a>
                      </div>
@@ -263,18 +279,21 @@
                      </div>
                      <h6 class="image-slider__title">Thai Soup</h6>
                      <div class="image-slider__location"><a href="#"> <img src="img/icon/map-marker.svg"
-                              alt=""><span>Foody man</span></a>
+                              alt=""><span>Foody
+                              man</span></a>
                      </div>
                      <div class="image-slider__text">$2.79</div>
                      <div class="image-slider__btn">
                         <a class="image-slider__button" href="#">Order Now</a>
                      </div>
                   </div>
+
                </div>
             </div>
-            <div class="swiper-button-prev popular-slide-btn-prev"></div>
          </div>
       </div>
+      <div class="swiper-button-prev popular-slide-btn-prev"></div>
+   </div>
 </section>
 <section class="featured">
    <div class="container">
@@ -517,13 +536,13 @@
    <div class="container">
       <div class="menu-nav__container">
          <h4 class="menu-nav__title">Search by Food</h4>
-         <!-- <div class="menu-nav-arrows-text"> View All <img src="img/icon/orange-all.svg" alt=""></div> -->
          <div class="menu-nav-arrows">
+            <div class="menu-nav-arrows-text"> <a href="#">View All <img src="img/icon/orange-all.svg" alt=""></a></div>
             <div class="menu-nav-btn-prev swiper-button-prev"></div>
             <div class="menu-nav-btn-next swiper-button-next"></div>
          </div>
       </div>
-      <div class="menu-nav__container col-11">
+      <div class="menu-nav__container">
 
          <div class="image-slider-menu swiper swiper-container">
             <!-- Additional required wrapper -->
@@ -537,7 +556,14 @@
                      <h6 class="menu-nav-slider__title">Pizza</h6>
                   </a>
                </div>
-
+               <div class="image-slider__slide swiper-slide">
+                  <a href="#">
+                     <div class="image-slider__image">
+                        <div class="menu-nav__img"> <img src="img/nav-food5.png" alt="image"></div>
+                     </div>
+                     <h6 class="menu-nav-slider__title">Chowmein</h6>
+                  </a>
+               </div>
                <div class="image-slider__slide swiper-slide">
                   <a href="#">
                      <div class="image-slider__image">
@@ -562,6 +588,15 @@
                         <div class="menu-nav__img"><img src="img/nav-food4.png" alt="image"></div>
                      </div>
                      <h6 class="menu-nav-slider__title">Sub-sandiwch</h6>
+                  </a>
+               </div>
+
+               <div class="image-slider__slide swiper-slide">
+                  <a href="#">
+                     <div class="image-slider__image">
+                        <div class="menu-nav__img"> <img src="img/nav-food1.png" alt="image"></div>
+                     </div>
+                     <h6 class="menu-nav-slider__title">Pizza</h6>
                   </a>
                </div>
 
@@ -688,6 +723,7 @@
                            alt=""></a>
                   </div>
                </div>
+
                <div class="col-12 col-lg-8">
                   <div class="recommendations-card__img">
                      <img src="img/menu1.png" alt="">
@@ -698,11 +734,6 @@
 
          <div class="recommendations-card">
             <div class="row align-items-center">
-               <div class="col-12 col-lg-8">
-                  <div class="recommendations-card__img recommendations-card__img-reverse">
-                     <img src="img/menu2.png" alt="">
-                  </div>
-               </div>
                <div class="col-12 col-lg-4 recommendations-card__txt-contain">
                   <h4 class="recommendations-card__title">Celebrate parties
                      with <span>Fried Chicken</span></h4>
@@ -712,6 +743,12 @@
                   <div class="recommendations-card__button">
                      <a class="recommendations-card__btn" href="#">Proceed to order <img src="img/icon/nav-right.svg"
                            alt=""></a>
+                  </div>
+               </div>
+
+               <div class="col-12 col-lg-8">
+                  <div class="recommendations-card__img recommendations-card__img-reverse">
+                     <img src="img/menu2.png" alt="">
                   </div>
                </div>
             </div>

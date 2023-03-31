@@ -3,10 +3,6 @@ import * as flsFunctions from "./modules/functions.js";
 
 flsFunctions.isWebp();
 
-// import Swiper, { Navigation, Pagination } from 'swiper';
-
-// const swiper = new Swiper();
-
 
 // TABS
 // -------------------
@@ -29,7 +25,7 @@ function Tabs() {
 
    var change = function (e) {
       clear();
-      e.target.classList.add('active');
+      e.target.parentNode.classList.add('active');
       var id = e.currentTarget.getAttribute('data-tab');
       document.getElementById(id).classList.add('active');
    }
@@ -68,7 +64,7 @@ new Swiper('.image-slider', {
          spaceBetween: 40,
       },
       1024: {
-         slidesPerView: 4,
+         slidesPerView: 5,
          spaceBetween: 16,
       },
    },
@@ -103,7 +99,7 @@ new Swiper('.image-slider-menu', {
          spaceBetween: 40,
       },
       1024: {
-         slidesPerView: 5,
+         slidesPerView: 6,
          spaceBetween: 16,
       },
    },

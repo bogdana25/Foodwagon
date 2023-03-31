@@ -17,6 +17,7 @@ $black: #000;
 $bg1: #FCCB1C;
 $bg2: rgba(241, 114, 40, 0.2);
 $bg3: #FEEFD0;
+$bg4: #FEFAF1;
 $font1: 'Source Sans Pro', sans-serif;
 $font2: 'Open Sans', sans-serif;
 
@@ -218,6 +219,18 @@ h5 {
     color: $sprimary;
 
   }
+
+  &-user__btn {
+    padding: 14px 24px;
+
+    &:hover {
+      transition: .5s;
+      background: #FFFFFF;
+      /* Shadow/1 */
+      box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+      border-radius: 8px;
+    }
+  }
 }
 
 // --------------------------
@@ -249,13 +262,13 @@ h5 {
 }
 
 .header-order-tab-nav.active {
-  color: $orange;
+  span {
+    color: $orange;
+  }
 }
 
 .image-slider__image img {
-
   max-height: 282px;
-  max-width: 284px;
   width: 100%;
   border-radius: 15px;
 }
@@ -307,7 +320,8 @@ h5 {
   &__container {
     position: absolute;
     top: 75px;
-    left: 2px;
+    left: 0;
+    right: 0;
 
     @media (max-width: 1399px) {
       top: 35px;
@@ -354,6 +368,11 @@ h5 {
     @media (max-width: 1199px) {
       padding: 14px;
     }
+
+    &__tab-container {
+      border-bottom: 2px solid $whiteg;
+      padding-bottom: 10px;
+    }
   }
 
   &-order-tab-icon {
@@ -374,7 +393,6 @@ h5 {
       font-weight: 700;
       font-size: 18px;
       line-height: 100%;
-      color: $orange;
     }
   }
 
@@ -411,6 +429,7 @@ h5 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 24px;
 
     @media (max-width: 479px) {
       flex-wrap: wrap;
@@ -627,35 +646,44 @@ h5 {
 
   &-swiper {
     position: relative;
-    max-width: 1200px;
     margin: 0 auto;
   }
 }
 
+// .swiper-button-next:after,
+// .swiper-button-prev:after {
+//   font-size: 33px;
+// }
+
 .popular-slide-btn-prev {
-  right: auto;
-  left: -100px;
-  top: 30%;
+  position: absolute;
+  left: -90px;
+  top: 50%;
   padding: 35px;
   color: $white;
   background-color: $primary ;
   border-radius: 50%;
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1500px) {
     display: none;
   }
 }
 
+.popular .container {
+  position: relative;
+}
+
+
 .popular-slide-btn-next {
-  right: -100px;
-  left: auto;
-  top: 30%;
+  position: absolute;
+  right: -90px;
+  top: 50%;
   padding: 35px;
   color: $white;
   background-color: $primary;
   border-radius: 50%;
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1500px) {
     display: none;
   }
 }
@@ -714,6 +742,11 @@ h5 {
 
   text-align: center;
   color: $white;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 33px;
 }
 
 // ----------------------
@@ -880,6 +913,7 @@ h5 {
 .menu-nav {
   padding: 80px 0 55px 0;
   position: relative;
+  background-color: $bg4;
 
   @media (max-width: 479px) {
     padding: 40px 0 20px 0;
@@ -887,7 +921,10 @@ h5 {
   }
 
   &__container {
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
+    margin-bottom: 70px;
   }
 
   &-flex-container {
@@ -898,44 +935,39 @@ h5 {
   &__title {
     text-align: left;
     color: $dark;
-    margin-bottom: 80px;
 
-    @media (max-width: 479px) {
-      margin-bottom: 40px;
-
-    }
   }
 
   &-arrows {
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 20%;
-    right: 15%;
 
     @media (max-width: 992px) {
       display: none;
     }
 
-    // &-text {
-    //   font-weight: 700;
-    //   font-size: 18px;
-    //   line-height: 100%;
-    //   text-align: center;
-    //   color: #FFB30E;
+    &-text {
+      margin-bottom: 20px;
+      margin-right: 30px;
 
-    //   img {
-    //     margin-top: 3px;
-    //   }
+      a {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 100%;
+        /* identical to box height, or 18px */
+        text-align: center;
+        /* Gradient/2 */
+        background: linear-gradient(180deg, #FFD077 -38.22%, #FFB30E 133.44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
 
-    //   @media (max-width: 1480px) {
-    //     right: 420px;
-    //   }
-
-    //   @media (max-width: 1350px) {
-    //     display: none;
-    //   }
-    // }
+        img {
+          margin-left: 5px;
+          margin-top: 1px;
+        }
+      }
+    }
   }
 
   &-btn-next {
@@ -945,6 +977,9 @@ h5 {
     border-radius: 50%;
     right: -80px;
     left: auto;
+    position: static;
+    width: 36px;
+    height: 36px;
 
     @media (max-width: 1480px) {
       right: 10px;
@@ -956,8 +991,12 @@ h5 {
     background-color: $primary;
     padding: 35px;
     border-radius: 50%;
+    position: static;
     right: auto;
-    left: -80px;
+    left: -90px;
+    width: 36px;
+    height: 36px;
+    margin-right: 16px;
 
     @media (max-width: 1480px) {
       left: -160px;
@@ -1224,6 +1263,12 @@ h5 {
       }
     }
 
+    &:nth-child(even) {
+      .row {
+        flex-direction: row-reverse;
+      }
+    }
+
     &__img {
       img {
         border-radius: 0 16px 16px 0;
@@ -1242,7 +1287,7 @@ h5 {
           width: 100%;
 
           @media (max-width: 991px) {
-            border-radius: 16px 16px 0 0;
+            border-radius: 0 0 16px 16px;
           }
         }
       }
@@ -1490,10 +1535,13 @@ h5 {
 
     &__text {
       margin-bottom: 16px;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 100%;
-      color: $whiteg;
+
+      & a {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        color: $whiteg;
+      }
     }
   }
 
@@ -1550,7 +1598,7 @@ h5 {
       &-input {
         max-width: 334px;
         width: 100%;
-        padding: 17px 16px 18px 16px;
+        padding: 17px 16px 18px 45px;
         background: $grey;
         border-radius: 8px;
         font-family: $font2;
@@ -1560,7 +1608,17 @@ h5 {
         line-height: 140%;
         /* or 25px */
         color: #ADADAD;
-        margin-right: 16px;
+
+        &-container {
+          margin-right: 16px;
+          position: relative;
+        }
+
+        &-icon {
+          position: absolute;
+          top: 20px;
+          left: 11px;
+        }
 
         @media (max-width: 479px) {
           margin-bottom: 30px;
