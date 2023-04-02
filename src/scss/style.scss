@@ -415,6 +415,10 @@ h5 {
     border-radius: 8px;
     max-width: 200px;
     width: 100%;
+    transition: 0.6s;
+    &:hover {
+      background: $primary;
+    }
 
     @media (max-width: 479px) {
       padding: 15px 48px;
@@ -473,7 +477,6 @@ h5 {
   &__img {
     img {
       border-radius: 16px;
-      max-width: 356px;
       width: 100%;
 
     }
@@ -664,7 +667,7 @@ h5 {
   background-color: $primary ;
   border-radius: 50%;
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1700px) {
     display: none;
   }
 }
@@ -683,7 +686,7 @@ h5 {
   background-color: $primary;
   border-radius: 50%;
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1700px) {
     display: none;
   }
 }
@@ -734,7 +737,6 @@ h5 {
   padding: 21px 48px;
 
   background: $orange;
-  box-shadow: 0px 5px 10px rgba(253, 114, 92, 0.22), 0px 20px 40px rgba(250, 99, 35, 0.24);
   border-radius: 8px;
   font-weight: 700;
   font-size: 18px;
@@ -742,6 +744,10 @@ h5 {
 
   text-align: center;
   color: $white;
+  transition: 0.6s;
+  &:hover {
+    background: $primary;
+  }
 }
 
 .swiper-button-next:after,
@@ -781,7 +787,6 @@ h5 {
 
       img {
         border-radius: 16px;
-        max-width: 356px;
         width: 100%;
       }
     }
@@ -879,6 +884,10 @@ h5 {
     box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
     border-radius: 14px;
     padding: 21px 48px;
+    transition: 0.6s;
+    &:hover {
+      background: linear-gradient(97.86deg, #FF9A0E  -8.95%, #FFBA26 109.24%);
+    }
 
     img {
       margin-top: 2px;
@@ -1361,6 +1370,10 @@ h5 {
       width: 100%;
       box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
       border-radius: 8px;
+      transition: 0.6s;
+      &:hover {
+        background: linear-gradient(97.86deg, #FF9A0E  -8.95%, #FFBA26 109.24%);
+      }
 
       @media (max-width: 479px) {
         font-weight: 700;
@@ -1425,6 +1438,10 @@ h5 {
     box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
     border-radius: 8px;
     display: inline-block;
+    transition: 0.6s;
+    &:hover {
+      background: linear-gradient(97.86deg, #F15E28  -8.95%, #F17228 109.24%);
+    }
 
     img {
       margin-left: 8px;
@@ -1541,6 +1558,10 @@ h5 {
         font-size: 18px;
         line-height: 100%;
         color: $whiteg;
+        transition: 0.6s;
+        &:hover {
+          color: $primary
+        }
       }
     }
   }
@@ -1637,6 +1658,9 @@ h5 {
         /* Button shadow ! */
         box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
         border-radius: 8px;
+        &:hover {
+          background: linear-gradient(92.84deg, #FF8A00 -47.72%, #FFB800 136.81%);
+        }
       }
     }
   }
@@ -1677,6 +1701,28 @@ h5 {
       img {
         margin-top: 2px;
       }
+    }
+  }
+}
+.image-slider-pagination.swiper-pagination-bullets {
+  bottom: -50px;
+}
+.image-slider-menu-pagination.swiper-pagination-bullets {
+  bottom: 50px;
+}
+.popular-swiper {
+  @media (max-width: 992px) {
+    margin-bottom: 70px;
+  }
+}
+.swiper-pagination-bullet-active {
+  background: $primary;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  &:not(.swiper-button-disabled) {
+    transition: 0.6s;
+    &:hover {
+      background: $orange;
     }
   }
 }

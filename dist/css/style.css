@@ -465,6 +465,10 @@ h5 {
   border-radius: 8px;
   max-width: 200px;
   width: 100%;
+  transition: 0.6s;
+}
+.header-order-tab-button:hover {
+  background: #FFB30E;
 }
 @media (max-width: 479px) {
   .header-order-tab-button {
@@ -521,7 +525,6 @@ h5 {
 }
 .sale__img img {
   border-radius: 16px;
-  max-width: 356px;
   width: 100%;
 }
 @media (max-width: 991px) {
@@ -688,7 +691,7 @@ h5 {
   background-color: #FFB30E;
   border-radius: 50%;
 }
-@media (max-width: 1500px) {
+@media (max-width: 1700px) {
   .popular-slide-btn-prev {
     display: none;
   }
@@ -707,7 +710,7 @@ h5 {
   background-color: #FFB30E;
   border-radius: 50%;
 }
-@media (max-width: 1500px) {
+@media (max-width: 1700px) {
   .popular-slide-btn-next {
     display: none;
   }
@@ -756,13 +759,16 @@ h5 {
   justify-content: center;
   padding: 21px 48px;
   background: #F17228;
-  box-shadow: 0px 5px 10px rgba(253, 114, 92, 0.22), 0px 20px 40px rgba(250, 99, 35, 0.24);
   border-radius: 8px;
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
   text-align: center;
   color: white;
+  transition: 0.6s;
+}
+.image-slider__button:hover {
+  background: #FFB30E;
 }
 
 .swiper-button-next:after,
@@ -799,7 +805,6 @@ h5 {
 }
 .featured-card__img img {
   border-radius: 16px;
-  max-width: 356px;
   width: 100%;
 }
 .featured-card-logo {
@@ -879,6 +884,10 @@ h5 {
   box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
   border-radius: 14px;
   padding: 21px 48px;
+  transition: 0.6s;
+}
+.featured__btn:hover {
+  background: linear-gradient(97.86deg, #FF9A0E -8.95%, #FFBA26 109.24%);
 }
 .featured__btn img {
   margin-top: 2px;
@@ -1319,6 +1328,10 @@ h5 {
   width: 100%;
   box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
   border-radius: 8px;
+  transition: 0.6s;
+}
+.recommendations-card__btn:hover {
+  background: linear-gradient(97.86deg, #FF9A0E -8.95%, #FFBA26 109.24%);
 }
 @media (max-width: 479px) {
   .recommendations-card__btn {
@@ -1380,6 +1393,10 @@ h5 {
   box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
   border-radius: 8px;
   display: inline-block;
+  transition: 0.6s;
+}
+.order__btn:hover {
+  background: linear-gradient(97.86deg, #F15E28 -8.95%, #F17228 109.24%);
 }
 .order__btn img {
   margin-left: 8px;
@@ -1488,6 +1505,10 @@ h5 {
   font-size: 18px;
   line-height: 100%;
   color: #F5F5F5;
+  transition: 0.6s;
+}
+.footer-info__text a:hover {
+  color: #FFB30E;
 }
 @media (max-width: 992px) {
   .footer-follow {
@@ -1578,6 +1599,9 @@ h5 {
   box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
   border-radius: 8px;
 }
+.footer-follow__form-button:hover {
+  background: linear-gradient(92.84deg, #FF8A00 -47.72%, #FFB800 136.81%);
+}
 .footer__text {
   margin-top: 16px;
   display: flex;
@@ -1614,4 +1638,29 @@ h5 {
 }
 .footer__text-txt img {
   margin-top: 2px;
+}
+
+.image-slider-pagination.swiper-pagination-bullets {
+  bottom: -50px;
+}
+
+.image-slider-menu-pagination.swiper-pagination-bullets {
+  bottom: 50px;
+}
+
+@media (max-width: 992px) {
+  .popular-swiper {
+    margin-bottom: 70px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: #FFB30E;
+}
+
+.swiper-button-next:not(.swiper-button-disabled), .swiper-rtl .swiper-button-prev:not(.swiper-button-disabled) {
+  transition: 0.6s;
+}
+.swiper-button-next:not(.swiper-button-disabled):hover, .swiper-rtl .swiper-button-prev:not(.swiper-button-disabled):hover {
+  background: #F17228;
 }

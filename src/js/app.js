@@ -40,11 +40,10 @@ var connectTabs = new Tabs();
 new Swiper('.image-slider', {
    slidesPerView: 5,
    spaceBetween: 30,
-   loop: true,
    pagination: {
-      // el: ".swiper-points",
+      el: ".image-slider-pagination",
       clickable: true,
-   },
+    },
    // стрелки
    navigation: {
       nextEl: ".popular-slide-btn-next",
@@ -67,6 +66,13 @@ new Swiper('.image-slider', {
          slidesPerView: 5,
          spaceBetween: 16,
       },
+      1700: {
+         slidesPerView: 5,
+         spaceBetween: 16,
+         pagination: {
+            enabled: false,
+         }
+      },
    },
 });
 
@@ -75,11 +81,10 @@ new Swiper('.image-slider', {
 new Swiper('.image-slider-menu', {
    slidesPerView: 6,
    spaceBetween: 30,
-   loop: true,
    pagination: {
-      // el: ".swiper-points",
+      el: ".image-slider-menu-pagination",
       clickable: true,
-   },
+    },
    // стрелки
    navigation: {
       nextEl: ".menu-nav-btn-next",
@@ -89,6 +94,9 @@ new Swiper('.image-slider-menu', {
       0: {
          slidesPerView: 2,
          spaceBetween: 20,
+         pagination: {
+            enabled: true,
+         }
       },
       479: {
          slidesPerView: 3,
@@ -98,9 +106,12 @@ new Swiper('.image-slider-menu', {
          slidesPerView: 4,
          spaceBetween: 40,
       },
-      1024: {
+      992: {
          slidesPerView: 6,
          spaceBetween: 16,
+         pagination: {
+            enabled: false,
+         }
       },
    },
 });
